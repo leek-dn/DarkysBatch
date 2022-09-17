@@ -134,7 +134,7 @@
 
 	//-------------------------------------------------------------------
 
-	Game.customChecks = Game.customChecks.concat([
+	Game.registerHook('Darkys_Upgrades',[
 		//function(){if (Game.Objects['Cursor'].amount+Game.Objects['Grandma'].amount+Game.Objects['Farm'].amount+Game.Objects['Factory'].amount+Game.Objects['Mine'].amount+Game.Objects['Bank'].amount+Game.Objects['Temple'].amount+Game.Objects['Wizard tower'].amount+Game.Objects['Shipment'].amount+Game.Objects['Alchemy lab'].amount+Game.Objects['Portal'].amount+Game.Objects['Time machine'].amount+Game.Objects['Antimatter condenser'].amount+Game.Objects['Prism'].amount+Game.Objects['Chancemaker'].amount+Game.Objects['Fractal engine'].amount+Game.Objects['Javascript console'].amount>=100) Unlock('Building up')},
 
 		//function(){if (Game.Objects['Cursor'].amount>=450) Unlock('Nonillion fingers')},
@@ -406,7 +406,7 @@
 	//-------------------------------------------------------------------
 
 	let Achievements = {}
-	Game.AchievementsById.forEach(achievement => {
+	Object.values(Game.AchievementsById).forEach(achievement => {
 		Achievements[achievement.name] = achievement
 	})
 
@@ -525,7 +525,7 @@
 
 	//-------------------------------------------------------------------
 
-	Game.customChecks = Game.customChecks.concat([
+	Game.registerHook('check',[
 		function () { var count = 0; for (var i in Game.UpgradesById) { var me = Game.UpgradesById[i]; if (me.bought && me.pool == "prestige") count++; } Darky.prestigeUpgradesOwned = count; },
 
 		function () { if (Game.Objects["Cursor"].amount >= 800) Win("Squeak goes the mouse") },
@@ -684,4 +684,5 @@
 	Game.Win("Third-party")
 	Game.Notify("Darky's Achievements and Upgrades Batch 1.1", " <b>73</b> new Achievements and <b>16</b> new Upgrades have been added, enjoy and thank you for using my mods!", [3, 4, "https://i.imgur.com/Fn7YXtZ.png"]);
 	PlaySound("https://freesound.org/data/previews/202/202092_3756348-lq.mp3");
+	LocalizeUpgradesAndAchievs();
 }
