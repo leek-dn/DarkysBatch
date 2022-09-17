@@ -1,10 +1,24 @@
+# Darky more or less abandoned the Batch
+
+This repo is here to save what was lost for his version no longer works under the latest CookieClicker.
+
+I have contacted Darky about how the batch can be working on the latest version, but after months it still hasn't been fixed.
+
+I will apply a few improvements on my own.
+
+If Darky ever contacts me on the road further with this mod, I will accept his path, as he is the spiritual owner of the mod.
+
+I only try to change things on a functional level. Things more based on the content I try to remain. This is also because I use this mod and changing this without limitation can be considered cheating(at least I do)
+
+______________
+
 # Darky's Achievements and Upgrades Batch
 
-Hey there! My name is Darky and welcome to **Darky's Achievements and Upgrades Batch**, a *bundle* of 2 mods i made for the popular and Father of Idle Games: [Cookie Clicker](https://cookieclicker.eu/cookieclicker/). Those 2 mods in question are: *Darky's Achievement Package* and *Darky's Armful Collection of Upgrades*.
+Hey there! My name is NOT Darky but leek and welcome to **Darky's Achievements and Upgrades Batch**, a *bundle* of 2 mods Darky made for the popular and Father of Idle Games: [Cookie Clicker](https://orteil.dashnet.org/cookieclicker/). Those 2 mods in question are: *Darky's Achievement Package* and *Darky's Armful Collection of Upgrades*.
 
 ## What is Darky's Achievements and Upgrades Batch?
 
-As already mentioned, *Darky's Achievements and Upgrades Batch* is a *bundle* mod containing *Darky's Achievement Package* and *Darky's Armful Collection of Upgrades* and when loaded into Cookie Clicker will give you a lot of new custom achievements and upgrades for the game! And yes, **those achievements add to your milk!**
+As already mentioned, *Darky's Achievements and Upgrades Batch* is a *bundle* mod containing *Darky's Achievement Package* and *Darky's Armful Collection of Upgrades* and when loaded into Cookie Clicker will give you a lot of new custom achievements and upgrades for the game! And yes, **those achievements add to your milk!**. Please note that the Batch might be outdated on the individual mods.
 
 If you like to spoil yourself on all the new achievements and upgrades in this Batch, then go over to this little [wiki](https://github.com/DarkSoul1800/DarkysBatch/wiki).
 
@@ -13,6 +27,8 @@ If you like to spoil yourself on all the new achievements and upgrades in this B
 Check the [releases page](https://github.com/DarkSoul1800/DarkysBatch/releases) for a full history of all versions of both the Package and the Collection (excluding the Pastebin versions).
 
 # How do I load these mods?
+
+These methods below do not load this fork.
 
 There are a few ways to load these mods:
 
@@ -123,8 +139,8 @@ window.eval(code);
 
 # Bugs and suggestions
 
-Any bugs or suggestions you have should be **opened as an issue** [here](https://github.com/DarkSoul1800/DarkysBatch/issues) for easier tracking. This allows me to close issues once they're fixed.
+Any bugs or suggestions you have should be **opened as an issue** [here](https://github.com/DarkSoul1800/DarkysBatch/issues) for easier tracking. Or [here](https://github.com/leek-dn/DarkysBatch/issues) for the fork you are currently reading. This allows me to close issues once they're fixed.
 
 # Is that all?
 
-Yea, i guess so. Thanks for reading and using my mods!
+Yea, i guess so. Thanks for reading and using darky's mods!
