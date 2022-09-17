@@ -18,8 +18,12 @@
 		return answer;
 	}
 
-	let Win = function Win(what) {
-		Game.Win(what);
+	let Win = function Win(what, silent = false) {
+		if (silent) {
+			Game.WinSilent(what);
+		} else {
+			Game.Win(what);
+		}
 		if (typeof Game.Achievements[what] !== "undefined" && Game.Achievements[what].darky == 1) {
 			DarkySave.Achievements[what] = 1;
 			DarkyAchievSaveConfig();
@@ -29,6 +33,7 @@
 	eval("Game.crate =" + Game.crate.toString().split("shadow';").join(" shadow';\nif (me.darky == 1) classes+=' darky'; //Darky's achievement package injection").split("mysterious?").join("mysterious? (me.darky == 1) ? 'background-image:url(\\\'https://i.imgur.com/JKKvixm.png\\\')'/*Darky's achievement package injection*/ : "));
 
 	eval("Game.crateTooltip = " + Game.crateTooltip.toString().split("if (mysterious) icon=[0,7];").join("if (mysterious) icon=[0,7]; if (mysterious && me.darky == 1) icon = [0, 0, 'https://i.imgur.com/JKKvixm.png']"));
+	eval("Game.WinSilent = " + Game.Win.toString().split("\n").filter(function(x){return x.indexOf("Game.Notify")==-1}).join("\n"))
 
 	if (typeof Darky === 'undefined') {
 		let style = document.createElement("style");
@@ -415,7 +420,7 @@
 						DarkyAchievSaveConfig();
 					}
 					else if (DarkySave.Achievements[me.name] == 1) {
-						Win(me.name);
+						Win(me.name, true);
 					}
 				}
 			}
@@ -444,7 +449,7 @@
 				if (typeof DarkySave[me.name] !== "undefined") {
 					DarkySave.Achievements[me.name] = DarkySave[me.name];
 					if (DarkySave[me.name]) {
-						Win(me.name);
+						Win(me.name, true);
 					}
 					delete DarkySave[me.name];
 				}
