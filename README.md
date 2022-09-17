@@ -8,7 +8,9 @@ I will apply a few improvements on my own.
 
 If Darky ever contacts me on the road further with this mod, I will accept his path, as he is the spiritual owner of the mod.
 
-I only try to change things on a functional level. Things more based on the content I try to remain. This is also because I use this mod and changing this without limitation can be considered cheating(at least I do)
+I only try to change things on a functional level. Things more based on the content I try to remain. This is also because I use this mod and changing this without limitation can be considered cheating(at least I do).
+
+If darky ever wants to restore its mod creation process, I am more than happy to help direct users of this mod back to his, but for the time being, this solution has to be made.
 
 ______________
 
@@ -28,7 +30,7 @@ Check the [releases page](https://github.com/DarkSoul1800/DarkysBatch/releases) 
 
 # How do I load these mods?
 
-These methods below do not load this fork.
+These methods below do load this fork.
 
 There are a few ways to load these mods:
 
@@ -42,7 +44,7 @@ There are a few ways to load these mods:
 
 ```javascript
 javascript: (function () {
-	Game.LoadMod('https://darksoul1800.github.io/DarkysBatch/Darkys_Achievement_Package.js');
+	Game.LoadMod('https://leek-dn.github.io/DarkysBatch/Darkys_Achievement_Package.js');
 }());
 ```
 
@@ -50,7 +52,7 @@ javascript: (function () {
 
 ```javascript
 javascript: (function () {
-	Game.LoadMod('https://darksoul1800.github.io/DarkysBatch/Darkys_Armful_Collection_of_Upgrades.js');
+	Game.LoadMod('https://leek-dn.github.io/DarkysBatch/Darkys_Armful_Collection_of_Upgrades.js');
 }());
 ```
 
@@ -58,7 +60,7 @@ javascript: (function () {
 
 ```javascript
 javascript: (function () {
-	Game.LoadMod('https://darksoul1800.github.io/DarkysBatch/Darkys_Achievements_and_Upgrades_Batch.js');
+	Game.LoadMod('https://leek-dn.github.io/DarkysBatch/Darkys_Achievements_and_Upgrades_Batch.js');
 }());
 ```
 
@@ -80,7 +82,7 @@ Want the mods to be loaded automatically everytime you open the game? Well for t
 var code = "(" + (function() {
     var checkReady = setInterval(function() {
         if (typeof Game.ready !== 'undefined' && Game.ready) {
-            Game.LoadMod('https://darksoul1800.github.io/DarkysBatch/Darkys_Achievement_Package.js');
+            Game.LoadMod('https://leek-dn.github.io/DarkysBatch/Darkys_Achievement_Package.js');
             clearInterval(checkReady);
         }
     }, 1000);
@@ -104,7 +106,7 @@ window.eval(code);
 var code = "(" + (function() {
     var checkReady = setInterval(function() {
         if (typeof Game.ready !== 'undefined' && Game.ready) {
-            Game.LoadMod('https://darksoul1800.github.io/DarkysBatch/Darkys_Armful_Collection_of_Upgrades.js');
+            Game.LoadMod('https://leek-dn.github.io/DarkysBatch/Darkys_Armful_Collection_of_Upgrades.js');
             clearInterval(checkReady);
         }
     }, 1000);
@@ -128,7 +130,7 @@ window.eval(code);
 var code = "(" + (function() {
     var checkReady = setInterval(function() {
         if (typeof Game.ready !== 'undefined' && Game.ready) {
-            Game.LoadMod('https://darksoul1800.github.io/DarkysBatch/Darkys_Achievements_and_Upgrades_Batch.js');
+            Game.LoadMod('https://leek-dn.github.io/DarkysBatch/Darkys_Achievements_and_Upgrades_Batch.js');
             clearInterval(checkReady);
         }
     }, 1000);
